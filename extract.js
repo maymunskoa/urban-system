@@ -20,8 +20,10 @@ btnOne.addEventListener('click', pickCardOne);
 
 
 
-
+var countOne = 0;
 function pickCardOne(){
+
+	if((countOne == countTwo) || (countOne == countTwo - 1)){
 	var numba = randomIntFromInterval(0,55);
 	console.log("player1: " + numba);
 	var url = "https://raw.githubusercontent.com/hayeah/playing-cards-assets/master/png/"
@@ -42,8 +44,15 @@ function pickCardOne(){
 //////////////////////////////
 
 	paraOne.textContent = score[0] + ' of ' + type[0];
+	paraOne.style.color = "black";
 	//console.log(score[1].length);
-	
+	countOne ++;
+	console.log("player 1 clicks: " + countOne);
+	}else{
+		paraOne.textContent = "Not your turn";
+		paraOne.style.color = "red";
+	}
+
 }
 
 
@@ -74,8 +83,10 @@ imageTwo.setAttributeNode(srcu);
 //event listeners
 btnTwo.addEventListener("click", pickCardTwo);
 
-
+var countTwo = 0;
 function pickCardTwo(){
+
+if((countOne == countTwo) || (countTwo == countOne -1)){
 	h4t.innerHTML = "player 2, your score is:";
 		var namba = randomIntFromInterval(0,55);
 	console.log("player2:" + namba);
@@ -89,11 +100,15 @@ function pickCardTwo(){
 	var kind = result[1].split(".");
 
 	parau.textContent = result[0] + ' of ' + kind[0];
+	parau.style.color = "black";
+	countTwo++;
+	console.log("player 2 clicks: " + countTwo);
 
+}else{
+		parau.textContent = "Not your turn";
+		parau.style.color = "red";
+	}
 }
-
-
-
 
 
 
