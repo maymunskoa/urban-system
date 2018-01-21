@@ -1,8 +1,39 @@
 body {
-	background-color: red;
+	background-color: #fff;
+	font-family: 'Oswald', sans-serif;
 }
 
-#fff {
+img{
+	margin:0 33%;
 	background-color: white;
+	border-radius: 10px;
+	box-shadow: 5px 10px rgba(200,200,200, 0.6);
+	height:150px;
 	width:auto;
 }
+
+button{
+	background-color: #4CAF50;
+	border:none;
+	color: #fff;
+	padding: 15px 32px;
+	text-transform: uppercase;
+	font-size:16px;
+    text-decoration: none;
+    display: inline-block;
+	
+}
+
+
+
+/*<hr> line styling START*/
+hr { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+/*<hr> line styling END */
